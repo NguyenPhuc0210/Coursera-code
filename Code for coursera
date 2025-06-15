@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 2 - Single File</title>
+
+  <style>
+    /* Skip link styling */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Commented out li styling */
+    /*
+    li {
+      list-style-type: none;
+      margin: 10px;
+    }
+    */
+
+    /* Nav styling */
+    nav {
+      display: inline-block;
+      width: 80%;
+      background-color: #ddd;
+      padding: 10px;
+    }
+
+    /* Only images inside nav */
+    nav img {
+      width: 10%;
+    }
+
+    /* Grid class */
+    .grid {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    /* Flex class */
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .flex div {
+      background-color: #eee;
+      padding: 20px;
+      flex: 1 1 30%;
+      text-align: center;
+    }
+
+    /* Contrast-safe styling */
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: sans-serif;
+    }
+
+    a {
+      color: #0645ad;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip to Main Content -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <header>
+    <h1>My Sample Website</h1>
+  </header>
+
+  <nav>
+    <img src="logo.png" alt="Logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <section class="grid">
+      <img src="image1.jpg" alt="Sample Image 1">
+      <img src="image2.jpg" alt="Sample Image 2">
+    </section>
+
+    <section class="flex">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2025</p>
+  </footer>
+
+</body>
+</html>
